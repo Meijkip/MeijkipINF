@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator V1</title>
+</head>
+
+<body>
+    <button type="button" onclick= optellen()>Optellen</button>
+    <button type="button" onclick= aftrekken()>Aftrekken</button>
+<br>
+<br>
+<h1 id="text"></h1>
+
+<script>
+getal1 = null;
+getal2 = null;
+antwoord = null;
+
+function optellen() {
+getal1 = parseInt(prompt("Voer het eerste getal in"));
+getal2 = parseInt(prompt("Voer het eerste getal in"));
+errorCheck = isNaN(getal1, getal2);
+    if(errorCheck == true){
+            antwoord = "... wacht, dat zijn geen getallen, hoor. Probeer volgende keer met 2 handen te typen, anders.";
+            } else {
+            antwoord = getal1 + getal2;
+            }
+let uitkomst = getal1 + getal2;
+document.getElementById("text").innerHTML = getal1 + " plus " + getal2 + " komt uit op " + antwoord;
+}
+
+function aftrekken() {
+getal1 = parseInt(prompt("Voer het eerste getal in"));
+getal2 = parseInt(prompt("Voer het eerste getal in"));
+errorCheck = isNaN(getal1, getal2);
+    if(errorCheck == true){
+            antwoord = "... wacht, dat zijn geen getallen, hoor. Probeer volgende keer met 2 handen te typen, anders.";
+            } else {
+            antwoord = getal1 - getal2;
+            }
+let uitkomst = getal1 + getal2;
+document.getElementById("text").innerHTML = getal1 + " min " + getal2 + " komt uit op " + antwoord;
+}
+
+</script>
+
+<br>
+<br>
+<a href="JSopdrachten.html">Terug</a>
+</body>
+</html>

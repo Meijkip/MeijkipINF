@@ -1,0 +1,54 @@
+<html>
+<head>
+  <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+  <h1 id="Title" class="whiteText middleAllign title">QUIZ TIME!</h1>
+  <h1 id="Vraag" class="whiteText middleAllign title"></h1>
+  <h1 id="VraagKlein" class="whiteText middleAllign titleSmall"></h1>
+
+    <script src="Functions.js"></script>
+    <script>
+        animateIntro();
+    </script>
+<br>
+<br>
+<br>
+<button class="afterFlash startButton middleAllign hidden" onclick= start()>Start</button>
+
+<button id="Answer1" class="afterIntro Question answerButton middleAllign hidden" onclick= vraagKlaar1()></button>
+<br>
+<br>
+<button id="Answer2" class="afterIntro Question answerButton middleAllign hidden" onclick= vraagKlaar2()></button>
+<br>
+<br>
+<button id="Answer3" class="afterIntro Question answerButton middleAllign hidden" onclick= vraagKlaar3()></button>
+<br>
+<br>
+<button id="Answer4" class="afterIntro Question answerButton middleAllign hidden" onclick= vraagKlaar4()></button>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<button class= "debugOperator" onclick= showDebugTools()>Show Debug tools</button> <button class= "debugOperator" onclick= hideDebugTools()>Hide Debug tools</button> <button class= "debugOperator" onclick= hideAllButtons()>Hide all Debug Buttons</button>
+<br>
+<br>
+<br>
+<button class="hidden debug" onclick= debugVariabele()>Debug: Variabelen (Refresht niet automatisch)</button> <button class="hidden debug" onclick= debugPlus1()>Debug: vraagNummer + 1</button> <button class="hidden debug" onclick= debugCorrectPlus1()>Debug: vraagCorrect + 1</button>
+<p id="debug" class="whiteText"></p>
+<p id="debug2" class="whiteText"></p>
+<a href="ObjectenOpdrachten.html" class="hidden terug" style="color: white; font-size: 20px; text-decoration: none;">Terug</a>
+</body>
+</html>
