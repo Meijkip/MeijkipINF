@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="text"></p>
+
+<script>
+    let volwassen = false
+    let reactie = "Je bent niet oud genoeg om te stemmen. Sorry."
+    
+leeftijd = parseInt(prompt("Wat is uw leeftijd?"));
+
+        if(leeftijd >= 18){
+            volwassen = true
+        }
+
+        if(leeftijd < 18){
+            volwassen = false
+        }
+
+        if(volwassen == true){
+            reactie = "Je bent oud genoeg om te stemmen! Gefeliciteerd!"
+        }
+
+document.getElementById("text").innerHTML = reactie;
+</script>
+<br>
+<br>
+<a href="JSopdrachten.html">Terug</a>
+</body>
+</html>

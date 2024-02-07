@@ -1,0 +1,47 @@
+body {
+    background-color: black;
+    transition: background-color 1.5s ease;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.whiteText {
+    color: rgb(255, 255, 255);
+}
+
+.middleAllign {
+    text-align: center;
+}
+
+.startButton {
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    width: 200px;
+    background-color: rgb(16, 233, 142);
+    border-radius: 10px;
+    border-color:lime;
+    font-size: 30px;
+    margin:auto
+}
+
+.hidden {
+    display: none
+}
+
+.titleSmall {
+    font-size: 40px;
+}
+
+.answerButton {
+        text-align: center;
+        height: 90px;
+        width: 300px;
+        background-color: rgb(18, 206, 21);
+        border-radius: 10px;
+        border-color:rgb(0, 113, 15);
+        font-size: 30px;
+        margin:auto
+    }
